@@ -1,12 +1,16 @@
 <template>
-<div>
-    <h1>Home</h1>
-    <p>This is the Home component.</p>
-    <p>Name in store: {{ name }}</p>
+    <div class="flex align-center justify-center">
+        <div class="flex align-center w-64 flex-wrap flex-col gap-4 mt-20">
+            <h1 class="text-3xl">
+                Home
+            </h1>
+            <p>This is the Home component.</p>
+            <p>Name in store: {{ name }}</p>
 
-    <input v-model="newName" type="text" class="border-gray-900"/>
-    <button @click="saveName" >Submit</button>
-</div>
+            <input v-model="newName" type="text" class="bg-gray-100 border-2 border-gray-600 py-2 px-2 rounded" placeholder="Name"/>
+            <button @click="saveName" class="bg-gray-600 text-white py-2 px-6 rounded text-center">Submit</button>
+        </div>
+    </div>
 </template>
 
 <script setup>   
